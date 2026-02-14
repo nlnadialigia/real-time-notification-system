@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](../README.md)
 [![NestJS](https://img.shields.io/badge/NestJS-11.x-E0234E?logo=nestjs)](https://nestjs.com/)
 [![Prisma](https://img.shields.io/badge/Prisma-7.x-2D3748?logo=prisma)](https://www.prisma.io/)
-[![Swagger](https://img.shields.io/badge/Swagger-API%20Docs-85EA2D?logo=swagger)](http://localhost:5001/api)
+[![Swagger](https://img.shields.io/badge/Swagger-API%20Docs-85EA2D?logo=swagger)](https://real-time-notification-system-nl.up.railway.app/api)
 [![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)](../LICENSE)
 
 Sistema de notificações em tempo real com autenticação Google OAuth2, arquitetura orientada a eventos, processamento assíncrono e entrega multicanal.

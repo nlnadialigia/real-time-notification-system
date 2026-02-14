@@ -3,7 +3,7 @@
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./docs/README.pt-br.md)
 [![NestJS](https://img.shields.io/badge/NestJS-11.x-E0234E?logo=nestjs)](https://nestjs.com/)
 [![Prisma](https://img.shields.io/badge/Prisma-7.x-2D3748?logo=prisma)](https://www.prisma.io/)
-[![Swagger](https://img.shields.io/badge/Swagger-API%20Docs-85EA2D?logo=swagger)](http://localhost:5001/api)
+[![Swagger](https://img.shields.io/badge/Swagger-API%20Docs-85EA2D?logo=swagger)](https://real-time-notification-system-nl.up.railway.app/api)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Real-time notification system with Google OAuth2 authentication, event-driven architecture, asynchronous processing, and multi-channel delivery.
