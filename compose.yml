@@ -5,8 +5,8 @@ services:
     ports:
       - "6005:5432"
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: {{ .Values.postgres.user }}
+      POSTGRES_PASSWORD: {{ .Values.postgres.password }}
       POSTGRES_DB: notification_db
     volumes:
       - postgres_data:/var/lib/postgresql/data

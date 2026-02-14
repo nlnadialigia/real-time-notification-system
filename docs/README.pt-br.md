@@ -108,6 +108,14 @@ src/
 ### Eventos WebSocket
 - Evento: `notification` - Entrega de notificação em tempo real
 
-## Licença
+## ⚠️ Observação sobre Ambiente Gratuito
 
-MIT
+Este projeto está hospedado em plano gratuito de infraestrutura.
+
+Por esse motivo:
+- A aplicação pode entrar em modo de suspensão após período de inatividade.
+- A primeira requisição após esse período pode apresentar latência adicional (cold start).
+- O worker pode iniciar com atraso se também estiver suspenso.
+- Esse comportamento é esperado no plano free e não representa falha na aplicação.
+
+> Em ambiente de produção com instância dedicada, esse comportamento não ocorre.
