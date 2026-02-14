@@ -9,6 +9,12 @@ async function bootstrap() {
   // Configurar Logger (Pino)
   app.useLogger(app.get(Logger));
 
+  // Configurar CORS
+  app.enableCors({
+    origin: process.env.CORS_ORIGIN?.split(',') || '*',
+    credentials: true,
+  });
+
   // Configurar Swagger
   const config = new DocumentBuilder()
     .setTitle('Notification System API')
@@ -19,6 +25,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-  await app.listen(process.env.PORT ?? 5001);
+  const port = process.env.PORT ?? 5001;
+  await app.listen(port);
+  console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();

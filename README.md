@@ -108,6 +108,11 @@ src/
 ### WebSocket Events
 - Event: `notification` - Real-time notification delivery
 
-## License
-
-MIT
+## ⚠️ Note about Free Environment
+This project is hosted on a free infrastructure plan.
+For this reason:
+- The application may go into sleep mode after a period of inactivity.
+- The first request after this period may experience additional latency (cold start).
+- The worker may start with a delay if it is also suspended.
+- This behavior is expected in the free plan and does not represent a failure in the application.
+> In a production environment with a dedicated instance, this behavior does not occur.

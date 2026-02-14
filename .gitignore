@@ -12,6 +12,23 @@ node_modules/
 dist/
 build/
 
+# Prisma
+/generated/prisma
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
 # Local
 ay
-/generated/prisma
