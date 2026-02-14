@@ -32,3 +32,6 @@ Thumbs.db
 
 # Local
 ay
+
+# Pnpm
+pnpm-*
