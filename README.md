@@ -80,6 +80,10 @@ Access Swagger documentation at:
 http://localhost:5001/api
 ```
 
+## Live Demo
+
+Test the application at: https://notification-app-nl.vercel.app/
+
 ## Testing Guide
 
 For detailed testing instructions using Postman, see:
