@@ -15,6 +15,12 @@ async function bootstrap() {
     credentials: true,
   });
 
+  // Configurar headers de segurança para permitir OAuth popup
+  app.use((req, res, next) => {
+    res.setHeader('Cross-Origin-Opener-Policy', 'same-origin-allow-popups');
+    next();
+  });
+
   // Configurar Swagger
   const config = new DocumentBuilder()
     .setTitle('Notification System API')

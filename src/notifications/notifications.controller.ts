@@ -1,4 +1,4 @@
-import {Body, Controller, Get, Post, Request, UseGuards} from '@nestjs/common';
+import {Body, Controller, Get, Param, Patch, Post, Request, UseGuards} from '@nestjs/common';
 import {AuthGuard} from '@nestjs/passport';
 import {ApiBearerAuth, ApiOperation, ApiTags} from '@nestjs/swagger';
 import {NotificationsService} from './notifications.service';
@@ -22,5 +22,11 @@ export class NotificationsController {
   @ApiOperation({summary: 'Listar notificações do usuário logado'})
   async findAll(@Request() req) {
     return this.notificationsService.findAllByUser(req.user.userId);
+  }
+
+  @Patch(':id/read')
+  @ApiOperation({summary: 'Marcar notificação como lida'})
+  async markAsRead(@Param('id') id: string, @Request() req) {
+    return this.notificationsService.markAsRead(id, req.user.userId);
   }
 }

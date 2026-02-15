@@ -30,4 +30,20 @@ export class NotificationsService {
       orderBy: {createdAt: 'desc'},
     });
   }
+
+  async markAsRead(id: string, userId: string) {
+    // Verificar se a notificação pertence ao usuário
+    const notification = await this.prisma.notification.findFirst({
+      where: {id, userId},
+    });
+
+    if (!notification) {
+      throw new Error('Notification not found');
+    }
+
+    return this.prisma.notification.update({
+      where: {id},
+      data: {read: true},
+    });
+  }
 }

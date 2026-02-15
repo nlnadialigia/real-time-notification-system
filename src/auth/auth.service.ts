@@ -37,7 +37,7 @@ export class AuthService {
       const payloadJwt = {sub: user.id, email: user.email};
 
       return {
-        accessToken: this.jwtService.sign(payloadJwt),
+        access_token: this.jwtService.sign(payloadJwt),
         user,
       };
     } catch (error) {
